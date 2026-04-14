@@ -79,7 +79,7 @@ export default function Home() {
 
               {/* slogan */}
               <h2 className="text-2xl text-gray-600 mb-6">
-                {"slogan" in t.hero ? (t.hero as any).slogan : "From Validation to Trust"}
+                {t.hero.title}
               </h2>
 
             </div>
