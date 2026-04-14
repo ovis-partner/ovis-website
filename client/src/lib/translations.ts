@@ -10,6 +10,7 @@ export const translations = {
     },
     hero: {
       title: "OVIS — From Validation to Trust",
+      slogan: "From Validation to Trust",
       subtitle:
         "We are committed to helping global retail and industrial brands reduce decision-making risks in the fields of imaging, optics, and inspection.",
       cta: "Get in Touch",
@@ -172,6 +173,7 @@ export const translations = {
     },
     hero: {
       title: "OVIS — 從驗證到信任",
+      slogan: "從驗證到信任",
       subtitle:
         "我們致力於幫助全球零售和工業品牌降低成像、光學和檢測領域的決策風險。",
       cta: "聯絡我們",
@@ -331,6 +333,7 @@ export const translations = {
     },
     hero: {
       title: "OVIS — 从验证到信任",
+      slogan: "从验证到信任",
       subtitle:
         "我们致力于帮助全球零售和工业品牌降低成像、光学和检测领域的决策风险。",
       cta: "联系我们",
