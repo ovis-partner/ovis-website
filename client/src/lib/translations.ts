@@ -10,7 +10,8 @@ export const translations = {
     },
     hero: {
       title: "OVIS — From Validation to Trust",
-      subtitle: "We are committed to helping global retail and industrial brands reduce decision-making risks in the fields of imaging, optics, and inspection.",
+      subtitle:
+        "We are committed to helping global retail and industrial brands reduce decision-making risks in the fields of imaging, optics, and inspection.",
       cta: "Get in Touch",
     },
     services: {
@@ -206,15 +207,18 @@ export const translations = {
         },
         {
           name: "PCB",
-          description: "電路板檢測和電子製造品質保證。",
+          description:
+            "電路板檢測和電子製造品質保證。",
         },
         {
           name: "AI 供應鏈",
-          description: "自動化、物流協調和智慧製造系統。",
+          description:
+            "自動化、物流協調和智慧製造系統。",
         },
         {
           name: "精密成像",
-          description: "光學檢測、鏡頭驗證和技術視覺分析。",
+          description:
+            "光學檢測、鏡頭驗證和技術視覺分析。",
         },
       ],
     },
@@ -248,7 +252,7 @@ export const translations = {
       ],
     },
     why: {
-      sectionLabel: "為什麼 OVIS",
+      sectionLabel: "為什麼選擇 OVIS",
       title: "建立在經驗與信任之上",
       subtitle: "連結東西方的可靠影像驗證。",
       items: [
@@ -265,7 +269,7 @@ export const translations = {
         {
           title: "錯誤規避",
           description:
-            "我們的價值不在於保證成功，而在於幫助強大的參與者避免成熟市場的致命「陷阱」。",
+            "我們的價值不在于保證成功，而在于幫助強大的參與者避免成熟市場的致命「陷阱」。",
         },
         {
           title: "系統思維",
@@ -298,7 +302,7 @@ export const translations = {
       founderAlt: "Oscar Lin",
       founderParagraphs: [
         "Oscar 在機器視覺領域工作超過十年，橫跨光學、檢測系統與工業驗證。他的經驗將技術理解與實際生產環境中的決策連結起來。",
-        "長期參與面向歐洲的專案後，Oscar 已建立起對全球客戶期望的強烈敏感：一致性、透明度，以及超越示範階段的可信賴解決方案。",
+        "長期參與面向歐洲的專案後，Oscar 已建立起對全球客戶期望的強烈敏感：一致性、透明度，以及超越示範階段的可信任解決方案。",
         "在 OVIS，他的角色不僅是推薦元件，更是幫助夥伴降低決策風險，並更有信心地從驗證走向信任。",
       ],
     },
@@ -434,35 +438,35 @@ export const translations = {
           value: "10+",
           title: "机器视觉年资",
           description:
-            "在工业影像、光学与检测技术领域的深厚专业知识。",
+            "在工业影像、光學與檢測技術領域的深厚專業知識。",
         },
         {
           value: "EU",
-          title: "面向欧洲的经验",
+          title: "面向歐洲的經驗",
           description:
-            "在亚洲制造与欧洲质量标准之间架起丰富的项目经验桥梁。",
+            "在亞洲製造與歐洲品質標準之間架起豐富的專案經驗橋樑。",
         },
         {
           value: "✓",
-          title: "信任合作网络",
+          title: "信任夥伴網絡",
           description:
-            "被全球通路与工业品牌信赖于关键影像决策。",
+            "被全球通路與工業品牌信賴於關鍵影像決策。",
         },
       ],
       founderLabel: "创始人简介",
       founderName: "Oscar Lin",
       founderAlt: "Oscar Lin",
       founderParagraphs: [
-        "Oscar 在机器视觉领域工作超过十年，横跨光学、检测系统与工业验证。他的经验将技术理解与实际生产环境中的决策连接起来。",
-        "长期参与面向欧洲的项目后，Oscar 已建立起对全球客户期望的强烈敏感：一致性、透明度，以及超越示范阶段的可信赖解决方案。",
-        "在 OVIS，他的角色不仅是推荐元件，更是帮助合作伙伴降低决策风险，并更有信心地从验证走向信任。",
+        "Oscar 在機器視覺領域工作超過十年，橫跨光學、檢測系統與工業驗證。他的經驗將技術理解與實際生產環境中的決策連結起來。",
+        "長期參與面向歐洲的專案後，Oscar 已建立起對全球客戶期望的強烈敏感：一致性、透明度，以及超越示範階段的可信任解決方案。",
+        "在 OVIS，他的角色不僅是推薦元件，更是幫助夥伴降低決策風險，並更有信心地從驗證走向信任。",
       ],
     },
     contact: {
       title: "联系我们",
       subtitle: "今天开始您可靠的验证之旅",
       cta: "联系我们",
-      email: "电子邮件",
+      email: "電子郵件",
       whatsapp: "WhatsApp",
       linkedin: "LinkedIn",
       footer: "OVIS © 2025",
@@ -475,3 +479,29 @@ export const translations = {
 };
 
 export type Language = keyof typeof translations;
+
+// Example: languages.ts or inside LanguageContext.tsx
+
+export const languages = {
+  en: {
+    hero: {
+      slogan: "From Validation to Trust",
+      // ...other keys
+    },
+    // ...other sections
+  },
+  "zh-TW": {
+    hero: {
+      slogan: "從驗證到信任", // 繁體中文
+      // ...other keys
+    },
+    // ...other sections
+  },
+  "zh-CN": {
+    hero: {
+      slogan: "从验证到信任", // 简体中文
+      // ...other keys
+    },
+    // ...other sections
+  },
+};
