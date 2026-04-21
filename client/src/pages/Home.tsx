@@ -2,6 +2,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Mail, MessageCircle, Linkedin } from "lucide-react";
 import { useState } from "react";
+import { Link } from "wouter";
 
 export default function Home() {
   const { t } = useLanguage();
@@ -101,7 +102,7 @@ export default function Home() {
                   height: "48px",
                 }}
               >
-                {"cta" in t.hero ? (t.hero as any).cta : "Contact OVIS →"}
+                {t.hero.cta}
               </Button>
             </div>
           </div>
@@ -214,120 +215,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why OVIS Section */}
-      <section id="why" className="py-24 bg-background">
-        <div className="container mx-auto px-6">
-          
-          {/* Title */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground">
-              {t.why.sectionLabel}
-            </h2>
-            <p className="text-lg text-foreground/70 mt-4 max-w-2xl mx-auto">
-              {t.why.title}
-            </p>
-            <p className="text-base text-foreground/65 mt-4 max-w-3xl mx-auto">
-              {t.why.subtitle}
-            </p>
-          </div>
-
-          {/* Three Trust Points */}
-          <div className="grid md:grid-cols-3 gap-10 text-center mb-14">
-            {t.why.trustPoints.map((point, idx) => (
-              <div key={idx}>
-                <div className="text-6xl font-bold text-[#1C2A39] mb-4">{point.value}</div>
-                <h3 className="text-lg font-semibold text-foreground mb-3">
-                  {point.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-foreground/65 max-w-xs mx-auto">
-                  {point.description}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* Divider */}
-          <div className="border-t border-border pt-12">
-            
-            <div className="grid md:grid-cols-[220px_minmax(0,1fr)] gap-14 items-start max-w-4xl mx-auto">
-
-              {/* Image */}
-              <div className="flex justify-center md:justify-start">
-                <img
-                  src="/oscar-emva.jpg"
-                  alt={t.why.founderAlt}
-                  className="w-[200px] h-[300px] rounded-md object-cover shadow-sm"
-                />
-              </div>
-
-              {/* Text */}
-              <div className="pt-1 md:pt-2">
-                
-                <p className="text-sm tracking-[0.18em] uppercase text-[#1C2A39]/55 mb-3">
-                  {t.why.founderLabel}
-                </p>
-
-                <h3 className="text-3xl font-bold text-foreground mb-6">
-                  {t.why.founderName}
-                </h3>
-
-                <div className="space-y-5 text-foreground/75 leading-relaxed">
-                  {t.why.founderParagraphs.map((paragraph, idx) => (
-                    <p key={idx}>{paragraph}</p>
-                  ))}
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          {/* Latest Updates Subsection */}
-          <div className="mt-16 bg-secondary/10 p-8 rounded-3xl border border-border">
-            <div className="max-w-3xl mx-auto text-center mb-8">
-              <p className="text-sm uppercase tracking-[0.18em] text-[#1C2A39]/55 mb-3">
-                {t.latestUpdates.title}
-              </p>
-              <h3 className="text-2xl font-semibold text-foreground">
-                {t.latestUpdates.subtitle}
-              </h3>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {[1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  className="bg-card p-6 rounded-lg border border-border hover:border-[#1C2A39]/40 transition-colors"
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-[#1C2A39]/10 rounded-full flex items-center justify-center">
-                      <span className="text-[#1C2A39] font-bold">O</span>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-sm text-foreground">OVIS</p>
-                      <p className="text-xs text-foreground/50">2 days ago</p>
-                    </div>
-                  </div>
-
-                  <p className="text-sm text-foreground/70 leading-relaxed mb-4">
-                    Latest insights and updates from our team on machine vision and supply chain optimization.
-                  </p>
-
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#1C2A39] hover:opacity-80 text-sm font-medium"
-                  >
-                    Read on LinkedIn →
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section id="contact" className="py-24 bg-background">
         <div className="container mx-auto px-6 text-center">
@@ -395,14 +282,21 @@ export default function Home() {
         </div>
       </section>
 
-       {/* Footer */}
-       <footer className="bg-background border-t border-border py-8">
-         <div className="container mx-auto px-6 text-center">
-           <p className="text-sm text-foreground/60">
-             {t.contact.footer}
-           </p>
-         </div>
-       </footer>
+      {/* Footer */}
+      <footer className="border-t border-foreground/10 py-6">
+        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-foreground/60">
+          <div>&copy; {new Date().getFullYear()} OVIS. All Rights Reserved.</div>
+
+          <div>
+            <a
+              href="/privacy"
+              className="hover:text-foreground transition-colors"
+            >
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
