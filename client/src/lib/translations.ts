@@ -16,22 +16,22 @@ export const translations = {
     },
     services: {
       title: "Core Services",
-      subtitle: "What We Do",
+      subtitle: "What OVIS Do",
       items: [
         {
-          name: "Technical Validation",
+          name: "Industry Media & Content",
           description:
-            "Before shipment, before risk.",
+            "Build visibility and trust through focused machine vision media."
         },
         {
-          name: "Application Support",
+          name: "Strategic Market Support",
           description:
-            "For semiconductor, PCB and precision imaging.",
+            "Support brands and channels in entering key industries.",
         },
         {
-          name: "China-side Coordination",
+          name: "China Validation Hub",
           description:
-            "Factory review, communication and technical follow-up.",
+            "Support brands and channels in entering key industries.",
         },
       ],
     },
@@ -118,22 +118,22 @@ export const translations = {
     },
     services: {
       title: "核心服務",
-      subtitle: "我們做什麼",
+      subtitle: "OVIS做什麼",
       items: [
         {
-          name: "技術驗證",
+          name: "產業媒體與內容",
           description:
-            "在發貨前，降低風險。",
+            "透過專注於機器視覺的媒體，建立品牌能見度與信信譽。",
         },
         {
-          name: "應用支持",
+          name: " 戰略支援",
           description:
-            "針對半導體、PCB 和精密成像提供支持。",
+            "協助品牌與通路進軍關鍵產業。",
         },
         {
-          name: "中國端協調",
+          name: "中國驗證中心",
           description:
-            "涵盖工厂审核、沟通协调与技术跟进。",
+            "在建立信任之前，降低供應端風險。",
         },
       ],
     },
@@ -164,7 +164,7 @@ export const translations = {
     },
     methodology: {
       title: "我們的流程",
-      subtitle: "OVIS 如何運作",
+      subtitle: "OVIS如何運作",
       steps: [
         {
           number: "01",
@@ -217,22 +217,22 @@ export const translations = {
     },
     services: {
       title: "核心服务",
-      subtitle: "我们做什么",
+      subtitle: "OVIS做什么",
       items: [
         {
-          name: "技术验证",
+          name: "行业媒体与内容",
           description:
-            "在发货前，降低风险。",
+            "通过专注机器视觉领域的媒体提升品牌知名度与信任度。",
         },
         {
-          name: "应用支持",
+          name: "战略支持",
           description:
-            "针对半导体、PCB 和精密成像提供支持。",
+            "协助品牌和渠道进军关键行业。",
         },
         {
-          name: "中国端协调",
+          name: "中国验证中心",
           description:
-            "涵盖工厂审核、沟通协调与技术跟进。",
+            "在建立信任之前，降低供应端风险。",
         },
       ],
     },
@@ -260,7 +260,7 @@ export const translations = {
     },
     methodology: {
       title: "我们的流程",
-      subtitle: "OVIS 如何运作",
+      subtitle: "OVIS如何运作",
       steps: [
         {
           number: "01",
