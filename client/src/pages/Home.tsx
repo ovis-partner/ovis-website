@@ -252,12 +252,12 @@ export default function Home() {
                 {t.contact.whatsapp}
               </h3>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/886975810758"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-lg text-foreground/70 hover:text-[#1C2A39] transition-colors"
               >
-                +1 (234) 567-890
+                +886 975-810768
               </a>
             </div>
 
@@ -270,7 +270,7 @@ export default function Home() {
                 {t.contact.linkedin}
               </h3>
               <a
-                href="https://linkedin.com/in/oscar"
+                href="https://www.linkedin.com/company/ovispartner/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-lg text-foreground/70 hover:text-[#1C2A39] transition-colors"
