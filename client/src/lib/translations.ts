@@ -10,8 +10,7 @@ export const translations = {
     hero: {
       title: "OVIS",
       slogan: "From Validation to Trust",
-      subtitle:
-        "Reduce uncertainty before choosing China.",
+      subtitle: "Reduce uncertainty before choosing China.",
       cta: "Get in Touch",
     },
     services: {
@@ -21,7 +20,7 @@ export const translations = {
         {
           name: "Industry Media & Content",
           description:
-            "Build visibility and trust through focused machine vision media."
+            "Build visibility and trust through focused machine vision media.",
         },
         {
           name: "Strategic Market Support",
@@ -62,8 +61,7 @@ export const translations = {
     },
     methodology: {
       title: "Our Methodology",
-      subtitle:
-        "How OVIS Works",
+      subtitle: "How OVIS Works",
       steps: [
         {
           number: "01",
@@ -93,8 +91,7 @@ export const translations = {
     },
     contact: {
       title: "Let's Connect",
-      subtitle:
-        "Start Your Reliable Validation Journey Today",
+      subtitle: "Start Your Reliable Validation Journey Today",
       cta: "Get in Touch",
       email: "Email",
       whatsapp: "WhatsApp",
@@ -112,8 +109,7 @@ export const translations = {
     hero: {
       title: "OVIS",
       slogan: "從驗證到信任",
-      subtitle:
-        "在選擇中國之前，先降低不確定性。",
+      subtitle: "在選擇中國之前，先降低不確定性。",
       cta: "聯絡我們",
     },
     services: {
@@ -122,18 +118,15 @@ export const translations = {
       items: [
         {
           name: "產業媒體與內容",
-          description:
-            "透過專注於機器視覺的媒體，建立品牌能見度與信譽。",
+          description: "透過專注於機器視覺的媒體，建立品牌能見度與信譽。",
         },
         {
           name: " 戰略支援",
-          description:
-            "協助品牌與通路進軍關鍵產業。",
+          description: "協助品牌與通路進軍關鍵產業。",
         },
         {
           name: "中國驗證中心",
-          description:
-            "在建立信任之前，降低供應端風險。",
+          description: "在建立信任之前，降低供應端風險。",
         },
       ],
     },
@@ -147,18 +140,15 @@ export const translations = {
         },
         {
           name: "PCB",
-          description:
-            "電路板檢測和電子製造品質保證。",
+          description: "電路板檢測和電子製造品質保證。",
         },
         {
           name: "AI 供應鏈",
-          description:
-            "自動化、物流協調和智慧製造系統。",
+          description: "自動化、物流協調和智慧製造系統。",
         },
         {
           name: "精密成像",
-          description:
-            "光學檢測、鏡頭驗證和技術視覺分析。",
+          description: "光學檢測、鏡頭驗證和技術視覺分析。",
         },
       ],
     },
@@ -174,8 +164,7 @@ export const translations = {
         {
           number: "02",
           title: "評估",
-          description:
-            "基於超過 10 年的行業經驗，我們識別最可行的解決方案。",
+          description: "基於超過 10 年的行業經驗，我們識別最可行的解決方案。",
         },
         {
           number: "03",
@@ -186,8 +175,7 @@ export const translations = {
         {
           number: "04",
           title: "技術建議",
-          description:
-            "提供結構化驗證報告，加速客戶的內部決策過程。",
+          description: "提供結構化驗證報告，加速客戶的內部決策過程。",
         },
       ],
     },
@@ -211,8 +199,7 @@ export const translations = {
     hero: {
       title: "OVIS",
       slogan: "从验证到信任",
-      subtitle:
-        "在选择中国之前，先降低不确定性。",
+      subtitle: "在选择中国之前，先降低不确定性。",
       cta: "联系我们",
     },
     services: {
@@ -221,18 +208,15 @@ export const translations = {
       items: [
         {
           name: "行业媒体与内容",
-          description:
-            "通过专注机器视觉领域的媒体提升品牌知名度与信任度。",
+          description: "通过专注机器视觉领域的媒体提升品牌知名度与信任度。",
         },
         {
           name: "战略支持",
-          description:
-            "协助品牌和渠道进军关键行业。",
+          description: "协助品牌和渠道进军关键行业。",
         },
         {
           name: "中国验证中心",
-          description:
-            "在建立信任之前，降低供应端风险。",
+          description: "在建立信任之前，降低供应端风险。",
         },
       ],
     },
@@ -270,8 +254,7 @@ export const translations = {
         {
           number: "02",
           title: "评估",
-          description:
-            "基于超过 10 年的行业经验，我们识别最可行的解决方案。",
+          description: "基于超过 10 年的行业经验，我们识别最可行的解决方案。",
         },
         {
           number: "03",
@@ -282,8 +265,7 @@ export const translations = {
         {
           number: "04",
           title: "技术建议",
-          description:
-            "提供结构化验证报告，加速客户的内部决策过程。",
+          description: "提供结构化验证报告，加速客户的内部决策过程。",
         },
       ],
     },
@@ -320,7 +302,7 @@ export const languages = {
   "zh-CN": {
     hero: {
       slogan: "从验证到信任", // 简体中文
-                                                                 // ...other keys
+      // ...other keys
     },
     // ...other sections
   },

@@ -20,7 +20,9 @@ export default function Privacy() {
           We do not sell or share your information with third parties.
         </p>
 
-        <p>If you have any questions, please contact us at ovis@ovis-partner.com.</p>
+        <p>
+          If you have any questions, please contact us at ovis@ovis-partner.com.
+        </p>
       </div>
     </div>
   );
