@@ -119,23 +119,37 @@ export default function Home() {
             {t.services.subtitle}
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-8 items-stretch">
             {t.services.items.map((service, idx) => (
               <div
                 key={idx}
-                className="bg-card p-8 rounded-lg border border-border hover:border-[#1C2A39]/40 transition-colors"
+                className="bg-card p-8 rounded-lg border border-border hover:border-[#1C2A39]/40 transition-colors h-full"
               >
                 <div className="w-12 h-12 bg-[#1C2A39]/10 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-[#1C2A39] font-bold text-lg">
                     {idx + 1}
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-foreground">
+                <h3 className="text-xl font-semibold mb-6 text-foreground min-h-[3.5rem]">
                   {service.name}
                 </h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  {service.description}
-                </p>
+                <div className="border-t border-border">
+                  {service.services.map((item, itemIdx) => (
+                    <div
+                      key={itemIdx}
+                      className="py-4 border-b border-border last:border-b-0"
+                    >
+                      <h4 className="text-base font-semibold text-foreground leading-snug">
+                        {item.name}
+                      </h4>
+                      {item.description ? (
+                        <p className="mt-2 text-sm text-foreground/65 leading-relaxed">
+                          {item.description}
+                        </p>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
