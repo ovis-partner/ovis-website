@@ -19,19 +19,48 @@ export const translations = {
       subtitle: "What OVIS Do",
       items: [
         {
-          name: "Industry Media & Content",
-          description:
-            "Build visibility and trust through focused machine vision media."
+          name: "Industry Media & Intelligence",
+          services: [
+            { name: "Market Intelligence Briefing", description: "" },
+            { name: "Brand Trust Diagnosis", description: "" },
+            { name: "Market Entry Topic Advisor", description: "" },
+            { name: "OVIS Advisor Retainer", description: "" },
+          ],
         },
         {
           name: "Strategic Market Support",
-          description:
-            "Support brands and channels in entering key industries.",
+          services: [
+            {
+              name: "Sales Team Industry Training",
+              description: "Help teams understand the industry, customers, and applications.",
+            },
+            {
+              name: "Industry Entry Strategy",
+              description: "Help brands identify the right entry point.",
+            },
+            {
+              name: "Key Customer Visit Support",
+              description: "Support teams in building trust with key customers faster.",
+            },
+            {
+              name: "Demo & Project Advancement",
+              description: "Turn interest, meetings, and testing into concrete projects.",
+            },
+          ],
         },
         {
           name: "China Validation Hub",
-          description:
-            "Support brands and channels in entering key industries.",
+          services: [
+            { name: "Pre-Shipment Verification", description: "" },
+            {
+              name: "On-Site Factory Verification & Shipment Witnessing",
+              description: "",
+            },
+            {
+              name: "Customer Standard Integration & Ongoing Verification Program",
+              description: "",
+            },
+          ],
         },
       ],
     },
@@ -121,19 +150,42 @@ export const translations = {
       subtitle: "OVIS做什麼",
       items: [
         {
-          name: "產業媒體與內容",
-          description:
-            "透過專注於機器視覺的媒體，建立品牌能見度與信譽。",
+          name: "海外信任傳播與產業情報",
+          services: [
+            { name: "產業情報簡報分享", description: "" },
+            { name: "品牌信任診斷", description: "" },
+            { name: "市場進入專題顧問", description: "" },
+            { name: "OVIS 顧問席位", description: "" },
+          ],
         },
         {
-          name: " 戰略支援",
-          description:
-            "協助品牌與通路進軍關鍵產業。",
+          name: "高門檻行業陪跑",
+          services: [
+            {
+              name: "銷售培訓",
+              description: "讓團隊懂行業、懂客戶、懂應用。",
+            },
+            {
+              name: "行業進入策略",
+              description: "幫品牌找到正確切入點。",
+            },
+            {
+              name: "客戶陪同拜訪",
+              description: "陪團隊面對關鍵客戶，快速建立信任。",
+            },
+            {
+              name: "Demo／專案推進",
+              description: "協助把興趣、會議與測試推進成具體專案。",
+            },
+          ],
         },
         {
-          name: "中國驗證中心",
-          description:
-            "在建立信任之前，降低供應端風險。",
+          name: "中國信賴驗證站",
+          services: [
+            { name: "出貨前單次驗證", description: "" },
+            { name: "工廠現場驗證與出貨見證", description: "" },
+            { name: "客戶標準導入與長期驗證合作", description: "" },
+          ],
         },
       ],
     },
@@ -220,19 +272,42 @@ export const translations = {
       subtitle: "OVIS做什么",
       items: [
         {
-          name: "行业媒体与内容",
-          description:
-            "通过专注机器视觉领域的媒体提升品牌知名度与信任度。",
+          name: "海外信任传播与产业情报",
+          services: [
+            { name: "产业情报简报分享", description: "" },
+            { name: "品牌信任诊断", description: "" },
+            { name: "市场进入专题顾问", description: "" },
+            { name: "OVIS 顾问席位", description: "" },
+          ],
         },
         {
-          name: "战略支持",
-          description:
-            "协助品牌和渠道进军关键行业。",
+          name: "高门槛行业陪跑",
+          services: [
+            {
+              name: "销售培训",
+              description: "让团队懂行业、懂客户、懂应用。",
+            },
+            {
+              name: "行业进入策略",
+              description: "帮品牌找到正确切入点。",
+            },
+            {
+              name: "客户陪同拜访",
+              description: "陪团队面对关键客户，快速建立信任。",
+            },
+            {
+              name: "Demo／项目推进",
+              description: "协助把兴趣、会议与测试推进成具体项目。",
+            },
+          ],
         },
         {
-          name: "中国验证中心",
-          description:
-            "在建立信任之前，降低供应端风险。",
+          name: "中国信赖验证站",
+          services: [
+            { name: "出货前单次验证", description: "" },
+            { name: "工厂现场验证与出货见证", description: "" },
+            { name: "客户标准导入与长期验证合作", description: "" },
+          ],
         },
       ],
     },
