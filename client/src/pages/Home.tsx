@@ -65,7 +65,6 @@ export default function Home() {
         <div className="relative z-10 container mx-auto px-6 text-center text-foreground">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col items-center justify-center text-center">
-              
               {/* LOGO */}
               <img
                 src="/logo.svg"
@@ -74,15 +73,12 @@ export default function Home() {
               />
 
               {/* 品牌名 */}
-              <h1 className="text-6xl font-serif mb-4">
-                OVIS
-              </h1>
+              <h1 className="text-6xl font-serif mb-4">OVIS</h1>
 
               {/* slogan */}
               <h2 className="text-2xl text-gray-600 mb-6">
                 {(t.hero as any).slogan}
               </h2>
-
             </div>
 
             <p className="text-lg md:text-xl max-w-3xl mx-auto mb-10 text-foreground/75 leading-relaxed">
@@ -149,23 +145,24 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-foreground mb-4">
               {t.scenarios.title}
             </h2>
-            <p className="text-lg text-foreground/70">
-              {t.scenarios.subtitle}
-            </p>
+            <p className="text-lg text-foreground/70">{t.scenarios.subtitle}</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             {t.scenarios.items.map((item, idx) => (
-              <div key={idx} className="relative overflow-hidden rounded-sm bg-[#EDEAE4] h-[160px] group">
+              <div
+                key={idx}
+                className="relative overflow-hidden rounded-sm bg-[#EDEAE4] h-[160px] group"
+              >
                 <img
                   src={
                     idx === 0
                       ? "/industry-semiconductor.png"
                       : idx === 1
-                      ? "/industry-pcb.png"
-                      : idx === 2
-                      ? "/industry-ai-supply-chain.png"
-                      : "/industry-precision-imaging.png"
+                        ? "/industry-pcb.png"
+                        : idx === 2
+                          ? "/industry-ai-supply-chain.png"
+                          : "/industry-precision-imaging.png"
                   }
                   alt={item.name}
                   className="absolute inset-0 w-full h-full object-cover scale-110 group-hover:scale-105 transition-transform duration-700"
@@ -285,7 +282,9 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-foreground/10 py-6">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-foreground/60">
-          <div>&copy; {new Date().getFullYear()} OVIS. All Rights Reserved.</div>
+          <div>
+            &copy; {new Date().getFullYear()} OVIS. All Rights Reserved.
+          </div>
 
           <div>
             <a
@@ -311,7 +310,7 @@ function LanguageSwitcher() {
 
   return (
     <div className="flex gap-2">
-      {languages.map((lang) => (
+      {languages.map(lang => (
         <button
           key={lang.code}
           onClick={() => setLanguage(lang.code as any)}
